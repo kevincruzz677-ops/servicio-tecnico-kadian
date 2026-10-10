@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Servicio Técnico Kadian</title>
-  <meta name="description" content="Servicio Técnico Kadian: diagnóstico a domicilio, reparación y mantenimiento de lavadoras y refrigeradores en San Mateo Atenco." />
+  <meta name="description" content="Servicio Técnico Kadian: diagnóstico a domicilio, reparación y mantenimiento de lavadoras y refrigeradores." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -230,7 +230,7 @@
     .hours tr.today td{font-weight:800}
 
     .footer{padding:24px 0 38px;color:var(--muted);font-size:.92rem}
-    .footer .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(17,17,17,.08);padding-top:20px}
+    .footer .container{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(17,17,17,.08);padding-top:20px;text-align:center}
 
     @media (max-width: 900px){
       .hero-grid,.services-grid,.process-wrap,.booking-shell,.contact-wrap{grid-template-columns:1fr}
@@ -274,7 +274,7 @@
       <div class="container hero-grid">
         <div>
           <span class="eyebrow">Atención a domicilio</span>
-          <h1>Lavadoras y refrigeradores<br>de vuelta en casa.</h1>
+          <h1>Lavadoras y refrigeradores de vuelta en casa.</h1>
           <p class="lead">Diagnóstico rápido, reparación profesional y entrega en tu domicilio. En Servicio Técnico Kadian cuidamos tu línea blanca como si fuera la nuestra.</p>
           <div class="hero-actions">
             <a class="cta-btn primary" href="#agenda">Agendar cita</a>
@@ -292,7 +292,7 @@
             <div class="device-card"></div>
             <div class="mini-device"></div>
             <div class="badge-box">
-              <strong>San Mateo Atenco</strong>
+              <strong>Servicio Técnico Kadian</strong>
               <span>Diagnóstico a domicilio • Reparación en taller</span>
             </div>
           </div>
@@ -454,7 +454,7 @@
       <div class="container contact-wrap">
         <div class="contact-box">
           <span class="eyebrow">Contacto</span>
-          <h3>Visítanos en San Mateo Atenco</h3>
+          <h3>Visítanos</h3>
           <a href="tel:+527292749447" class="phone">729 274 9447</a>
           <p style="margin:0;color:var(--muted);max-width:30rem;">Calle Emiliano Zapata, Manzana 009, Guadalupe, C.P. 52107, San Mateo Atenco, Estado de México.</p>
           <div style="height:18px"></div>
@@ -473,7 +473,6 @@
   <footer class="footer">
     <div class="container">
       <span>© <span id="yr"></span> Servicio Técnico Kadian</span>
-      <span>San Mateo Atenco, Estado de México</span>
     </div>
   </footer>
 
@@ -499,6 +498,7 @@
 
     function renderServiceOptions() {
       const container = $('sv');
+      container.innerHTML = '';
       slotServices.forEach((item, index) => {
         const btn = document.createElement('button');
         btn.type = 'button';
