@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Servicio Técnico Kadian</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230a0a0a%27/%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2714%27 fill=%27none%27 stroke=%27%23fff%27 stroke-width=%278%27 stroke-dasharray=%2765 24%27/%3E%3C/svg%3E">
+<meta property="og:title" content="Servicio Técnico Kadian">
+<meta name="description" content="Servicio Técnico Kadian: diagnóstico a domicilio, reparación y mantenimiento de lavadoras y refrigeradores. Agenda tu cita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--k:#0a0a0a;--w:#fafafa;--e:cubic-bezier(.2,.8,.2,1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:var(--k)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--w);color:var(--k);font:400 17px/1.6 'Schibsted Grotesk',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-weight:800;letter-spacing:-.035em;line-height:1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid #888;outline-offset:3px;border-radius:8px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.dk{background:var(--k);color:var(--w)}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:#fff;z-index:60;mix-blend-mode:difference}
+.pre{position:fixed;inset:0;z-index:50;background:var(--k);color:var(--w);display:grid;place-items:center;clip-path:inset(0);transition:clip-path 1s var(--e)}
+.pre b{display:block;overflow:hidden;font-size:clamp(30px,6vw,64px);letter-spacing:-.03em;padding:0 .1em .1em}
+.pre b span{display:block;animation:up .9s var(--e) both}
+body.go .pre{clip-path:inset(0 0 100% 0);pointer-events:none}
+@keyframes up{from{transform:translateY(110%)}to{transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hd{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;mix-blend-mode:difference;color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;text-decoration:none}
+.logo i{width:22px;height:22px;border:3px solid #fff;border-radius:50%;border-right-color:transparent;animation:spin 5s linear infinite}
+.nav nav a{margin-left:26px;text-decoration:none;font-weight:500;font-size:15px;opacity:.8}
+.nav nav a:hover{opacity:1}
+.pill{display:inline-flex;align-items:center;justify-content:center;border:1.5px solid currentColor;border-radius:99px;padding:13px 26px;font-weight:700;text-decoration:none;cursor:pointer;background:transparent;color:inherit;font-family:inherit;font-size:16px;transition:transform .3s var(--e),background .3s,color .3s}
+.pill:hover{background:currentColor}
+.pill:hover span{filter:invert(1)}
+.pill.solid{background:var(--w);color:var(--k);border-color:var(--w)}
+.hd .pill{padding:8px 18px;font-size:15px}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:120px 0 56px}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(440px circle at var(--mx,72%) var(--my,28%),#ffffff22,transparent 70%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:center;width:100%}
+h1{font-size:clamp(44px,8vw,116px)}
+.ln{display:block;overflow:hidden;padding-bottom:.1em}
+.ln>span{display:block;transform:translateY(110%)}
+body.go .ln>span{animation:up 1.1s var(--e) forwards;animation-delay:calc(var(--i)*.12s + .45s)}
+.lead{font-size:clamp(17px,2vw,21px);color:#b8b8b8;max-width:46ch;margin:28px 0 34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badge{width:100%;max-width:340px;justify-self:center;animation:spin 32s linear infinite}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:15px;color:#b8b8b8;margin-bottom:26px}
+.dot{width:9px;height:9px;border-radius:50%;background:#666}
+.dot.on{background:#fff;animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #ffffffaa}100%{box-shadow:0 0 0 10px #fff0}}
+.mq{background:var(--w);overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--k)}
+.mq div{display:inline-block;padding:16px 0;font-size:clamp(22px,3vw,34px);font-weight:800;letter-spacing:-.02em;animation:mq 28s linear infinite}
+.mq span{margin:0 26px}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:110px 0}
+.eyebrow{font-weight:700;margin:0 0 14px;opacity:.6}
+.h2{font-size:clamp(34px,5.4vw,72px)}
+.pin{height:260vh;padding:0;background:var(--w)}
+.stick{position:sticky;top:0;min-height:100svh;display:flex;align-items:center;padding-top:68px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;width:100%}
+.tabs{display:flex;gap:10px;margin:28px 0 22px;flex-wrap:wrap}
+.tabs button{font:700 16px 'Schibsted Grotesk',sans-serif;padding:11px 22px;border-radius:99px;border:1.5px solid var(--k);background:transparent;color:var(--k);cursor:pointer;transition:background .3s,color .3s}
+.tabs button[aria-selected=true]{background:var(--k);color:var(--w)}
+.pane{display:none}.pane.on{display:block}
+.pane p{color:#555;margin:0 0 14px;max-width:44ch}
+.pane ul{margin:0 0 26px;padding:0;list-style:none;border-top:1px solid #d4d4d4}
+.pane li{padding:11px 0;border-bottom:1px solid #d4d4d4;font-weight:500}
+.pane.on li{animation:up2 .6s var(--e) both;animation-delay:calc(var(--i)*.07s)}
+@keyframes up2{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.stage{aspect-ratio:1/1;border-radius:32px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 30%,#fff,#d6d6d6 78%)}
+.slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:12px;padding:7% 8%;transition:opacity .6s,transform .8s var(--e),clip-path .8s var(--e);clip-path:inset(0)}
+.slide.off{opacity:0;transform:translateY(40px) scale(.94);clip-path:inset(100% 0 0 0);pointer-events:none}
+.ph{flex:1;min-width:0;height:86%;display:flex;align-items:center;justify-content:center}
+.ph.one{flex:none;width:42%;height:90%}
+.ph img{max-width:100%;max-height:100%;object-fit:contain;display:block;filter:drop-shadow(0 24px 22px #0000005c);transform:perspective(900px) rotateY(var(--ry,0deg)) rotateX(var(--rx,0deg));transition:transform .25s}
+.prog{height:3px;background:#d4d4d4;margin-top:24px;border-radius:3px}.prog i{display:block;height:100%;width:0;background:var(--k);border-radius:3px}
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.split .sticky{position:sticky;top:110px;align-self:start}
+.sub{color:#b8b8b8;max-width:36ch;margin:18px 0 0}
+.tl{position:relative;margin:0;padding:0 0 0 58px;list-style:none}
+.tl::before,.tl .fill{content:"";position:absolute;left:15px;top:8px;width:2px}
+.tl::before{bottom:8px;background:#333}
+.tl .fill{background:#fff;height:0;z-index:1}
+.tl li{position:relative;padding:0 0 52px;opacity:.28;transition:opacity .6s}
+.tl li::before{content:"";position:absolute;left:-51px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--k);border:2px solid #666;z-index:2;transition:all .5s}
+.tl li.on{opacity:1}.tl li.on::before{background:#fff;border-color:#fff;box-shadow:0 0 0 9px #ffffff1f}
+.tl b{display:block;font-size:clamp(24px,3.2vw,38px);letter-spacing:-.025em;line-height:1.1;margin-bottom:6px}
+.tl span{display:block;color:#b8b8b8;max-width:46ch}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--k);margin-top:48px}
+.nums div{padding:28px 24px 0 0}
+.num{font-size:clamp(64px,10vw,150px);font-weight:800;letter-spacing:-.05em;line-height:1}
+.num.t{font-size:clamp(40px,6vw,86px);padding-top:.18em}
+.nums p{margin:10px 0 0;color:#555;max-width:26ch}
+.book{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.card{border:1px solid #333;border-radius:28px;padding:32px;background:#101010}
+.st{display:flex;align-items:center;gap:12px;margin:0 0 14px;font-weight:700}
+.st i{font-style:normal;width:28px;height:28px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-size:14px}
+.blk{margin-bottom:28px}
+.opt{display:block;width:100%;text-align:left;padding:15px 18px;margin-bottom:8px;border:1px solid #3a3a3a;border-radius:14px;background:transparent;color:#fff;font:inherit;cursor:pointer;transition:all .3s var(--e)}
+.opt:hover{border-color:#999}
+.opt small{display:block;color:#9a9a9a;font-size:14px}
+.opt[aria-pressed=true]{background:#fff;color:#000;border-color:#fff}
+.opt[aria-pressed=true] small{color:#444}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+.days .opt{flex:none;width:76px;text-align:center;margin:0;padding:12px 0;scroll-snap-align:start}
+.days .opt b{display:block;font-size:24px;line-height:1.1}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px}
+.slots .opt{margin:0;text-align:center;padding:12px 6px;animation:up2 .5s var(--e) both;animation-delay:calc(var(--i)*.04s)}
+.inp{width:100%;padding:14px 16px;margin-bottom:8px;border-radius:12px;border:1px solid #3a3a3a;background:#000;color:#fff;font:inherit}
+.inp::placeholder{color:#777}
+.sum{min-height:3.4em;color:#b8b8b8;font-size:15px;margin:0 0 16px}
+.send{display:flex;justify-content:center;padding:16px;border-radius:99px;background:#fff;color:#000;font-weight:800;text-decoration:none;transition:opacity .3s,transform .3s}
+.send[aria-disabled=true]{opacity:.3;pointer-events:none}
+.send:hover{transform:scale(1.02)}
+.hrs{width:100%;border-collapse:collapse;font-size:18px}
+.hrs td{padding:13px 0;border-bottom:1px solid #cfcfcf}
+.hrs td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.hrs tr.today{font-weight:800}
+.big{display:block;font-size:clamp(32px,5vw,60px);font-weight:800;letter-spacing:-.04em;text-decoration:none;margin:18px 0 24px}
+footer{padding:28px 0 34px;font-size:14px;color:#8a8a8a}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .9s var(--e),transform .9s var(--e)}
+.rv.in{opacity:1;transform:none}
+.mag{transition:transform .35s var(--e)}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:none;box-shadow:0 10px 30px #0008}
+@media(max-width:860px){.hero .wrap,.two,.split,.book{grid-template-columns:1fr;gap:32px}.badge{max-width:180px;justify-self:start}.nav nav{display:none}.float{display:inline-flex}.nums{grid-template-columns:1fr}.split .sticky{position:static}section{padding:80px 0}.pin{height:240vh}.stick{align-items:flex-start;padding-top:84px}.stage{aspect-ratio:4/3}.ph.one{width:30%}.pane li{padding:8px 0}.card{padding:22px}.tabs{margin:16px 0 14px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.ln>span{transform:none}.rv{opacity:1;transform:none}.pre{display:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="pre"><b><span>Servicio Técnico Kadian</span></b></div>
+<header class="hd"><div class="wrap nav">
+<a class="logo" href="#top"><i></i>Servicio Técnico Kadian</a>
+<nav><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#visita">Contacto</a></nav>
+<a class="pill mag" href="#cita"><span>Agendar cita</span></a>
+</div></header>
+
+<main id="top">
+<div class="hero dk" id="hero"><div class="wrap">
+<div>
+<div class="status"><i class="dot" id="dot"></i><span id="status">…</span></div>
+<h1><span class="ln" style="--i:0"><span>Lavadoras y</span></span><span class="ln" style="--i:1"><span>refrigeradores,</span></span><span class="ln" style="--i:2"><span>de vuelta en casa.</span></span></h1>
+<p class="lead">Diagnóstico a domicilio, reparación en taller y entrega en tu puerta. Servicio Técnico Kadian, San Mateo Atenco.</p>
+<div class="cta"><a class="pill solid mag" href="#cita"><span>Agendar cita</span></a><a class="pill mag" href="https://wa.me/527292749447?text=Hola%2C%20necesito%20reparar%20un%20electrodom%C3%A9stico" target="_blank" rel="noopener"><span>WhatsApp</span></a></div>
+</div>
+<svg class="badge" viewBox="0 0 300 300" aria-hidden="true"><defs><path id="c" d="M150,150 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0"/></defs>
+<text font-size="17" font-weight="700" fill="#fff"><textPath href="#c" textLength="735" lengthAdjust="spacing">Servicio Técnico Kadian · San Mateo Atenco · Línea blanca · </textPath></text>
+<circle cx="150" cy="150" r="70" fill="none" stroke="#fff" stroke-width="3"/><circle cx="150" cy="150" r="48" fill="none" stroke="#fff" stroke-width="2" opacity=".6"/><path d="M118 134a36 36 0 0 1 40-12" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/></svg>
+</div></div>
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<section class="pin" id="servicios"><div class="stick"><div class="wrap two">
+<div>
+<p class="eyebrow">Servicios</p>
+<h2 class="h2">Reparamos tu línea blanca</h2>
+<div class="tabs" role="tablist"><button role="tab" id="t0" aria-selected="true">Lavadoras</button><button role="tab" id="t1" aria-selected="false">Refrigeradores</button></div>
+<div class="pane on" id="p0"><p>Diagnosticamos la falla y reparamos tu lavadora para que vuelva a trabajar con normalidad.</p>
+<ul><li style="--i:0">No drena o no desagua</li><li style="--i:1">No centrifuga</li><li style="--i:2">Ruido o vibración excesiva</li><li style="--i:3">Fugas de agua</li><li style="--i:4">No enciende</li></ul></div>
+<div class="pane" id="p1"><p>Revisamos el sistema de enfriamiento y los componentes para proteger tus alimentos.</p>
+<ul><li style="--i:0">No enfría lo suficiente</li><li style="--i:1">Escarcha o exceso de hielo</li><li style="--i:2">Goteo de agua</li><li style="--i:3">Ruidos extraños</li><li style="--i:4">No enciende</li></ul></div>
+<a class="pill mag" href="#cita"><span>Agendar cita</span></a>
+<div class="prog"><i id="pg"></i></div>
+</div>
+<div class="stage" id="stage">
+<div class="slide" id="aw"><div class="ph"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect x='20' y='20' width='160' height='200' rx='20' fill='%23e0e0e0' stroke='%23999' stroke-width='2'/%3E%3Ccircle cx='100' cy='140' r='50' fill='%23007bff'/%3E%3Crect x='80' y='220' width='40' height='30' fill='%23999' rx='5'/%3E%3C/svg%3E" alt="Lavadora"></div><div class="ph"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect x='20' y='20' width='160' height='200' rx='20' fill='%23e0e0e0' stroke='%23999' stroke-width='2'/%3E%3Crect x='50' y='60' width='100' height='120' fill='%23fff' stroke='%23999' stroke-width='1'/%3E%3Ccircle cx='150' cy='90' r='8' fill='%23999'/%3E%3Crect x='80' y='220' width='40' height='30' fill='%23999' rx='5'/%3E%3C/svg%3E" alt="Refrigerador"></div></div>
+<div class="slide off" id="af"><div class="ph one"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect x='20' y='20' width='160' height='200' rx='20' fill='%23e0e0e0' stroke='%23999' stroke-width='2'/%3E%3Crect x='50' y='60' width='100' height='120' fill='%23fff' stroke='%23999' stroke-width='1'/%3E%3Ccircle cx='150' cy='90' r='8' fill='%23999'/%3E%3Crect x='80' y='220' width='40' height='30' fill='%23999' rx='5'/%3E%3C/svg%3E" alt="Refrigerador"></div></div>
+</div>
+</div></div></section>
+
+<section class="dk" id="proceso"><div class="wrap split">
+<div class="sticky"><p class="eyebrow">Proceso</p><h2 class="h2">Así trabajamos</h2><p class="sub">Del diagnóstico en tu casa a la entrega de tu equipo reparado.</p></div>
+<ol class="tl" id="tl"><div class="fill" id="fill"></div>
+<li><b>Diagnóstico a domicilio</b><span>Vamos a tu domicilio a revisar el equipo. La visita tiene un costo que varía según tu zona.</span></li>
+<li><b>Diagnóstico completo</b><span>Te explicamos todas las fallas que presenta tu electrodoméstico.</span></li>
+<li><b>Presupuesto</b><span>Si autorizas la reparación completa, el costo de la revisión se incluye en el presupuesto.</span></li>
+<li><b>Reparación en taller</b><span>Recogemos el equipo y lo reparamos en nuestro taller.</span></li>
+<li><b>Observación y entrega</b><span>De 3 a 4 días en observación y lo entregamos en tu domicilio.</span></li>
+</ol></div></section>
+
+<section><div class="wrap">
+<p class="eyebrow rv">En números</p><h2 class="h2 rv">Servicio que llega a ti</h2>
+<div class="nums">
+<div class="rv"><div class="num"><span class="cu" data-to="6">0</span></div><p>días de atención a la semana, de lunes a sábado.</p></div>
+<div class="rv"><div class="num">3–4</div><p>días de observación antes de entregar tu equipo.</p></div>
+<div class="rv"><div class="num t">A domicilio</div><p>Diagnóstico, recogida y entrega en tu casa.</p></div>
+</div></div></section>
+
+<section class="dk" id="cita"><div class="wrap book">
+<div class="rv"><p class="eyebrow">Agenda</p><h2 class="h2">Agenda tu cita</h2><p class="sub">Elige el servicio, el día y la hora. Te confirmamos por WhatsApp la fecha y el costo de la visita según tu zona.</p></div>
+<div class="card rv">
+<div class="blk"><p class="st"><i>1</i>Servicio</p><div id="sv"></div></div>
+<div class="blk"><p class="st"><i>2</i>Día</p><div class="days" id="days"></div></div>
+<div class="blk"><p class="st"><i>3</i>Hora</p><div class="slots" id="slots"><span style="color:#8a8a8a">Elige un día para ver los horarios.</span></div></div>
+<div class="blk"><p class="st"><i>4</i>Tus datos</p><input class="inp" id="nm" placeholder="Nombre" autocomplete="name"><input class="inp" id="zn" placeholder="Colonia o zona de tu domicilio" autocomplete="address-level2"></div>
+<p class="sum" id="sum">Completa los pasos para solicitar tu cita.</p>
+<a class="send" id="send" aria-disabled="true" target="_blank" rel="noopener">Solicitar cita por WhatsApp</a>
+</div></div></section>
+
+<section id="visita"><div class="wrap two" style="align-items:start">
+<div class="rv"><p class="eyebrow">Contacto</p><h2 class="h2">Visítanos en San Mateo Atenco</h2>
+<a class="big" href="tel:+527292749447">729 274 9447</a>
+<p style="max-width:34ch;color:#555">Calle Emiliano Zapata, Manzana 009, Guadalupe, C.P. 52107, San Mateo Atenco, Estado de México.<br>Plus Code: 6FW9+RG</p>
+<a class="pill mag" style="color:var(--k)" href="https://www.google.com/maps/search/?api=1&query=Calle+Emiliano+Zapata+Manzana+009+Guadalupe+52107+San+Mateo+Atenco" target="_blank" rel="noopener"><span>Cómo llegar</span></a></div>
+<div class="rv"><h3 style="font-size:30px;margin-bottom:12px">Horario de atención</h3><table class="hrs" id="hrs"></table></div>
+</div></section>
+</main>
+<footer class="dk"><div class="wrap">© <span id="yr"></span> Servicio Técnico Kadian · San Mateo Atenco, Estado de México</div></footer>
+<a class="pill solid float" href="#cita"><span>Agendar cita</span></a>
+
+<script>
+var $=function(i){return document.getElementById(i)},$$=function(s){return[].slice.call(document.querySelectorAll(s))},E=function(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x)e.innerHTML=x;return e};
+var go=function(){document.body.classList.add("go")};addEventListener("load",function(){setTimeout(go,900)});setTimeout(go,2600);
+var mqt="",mw=["Lavadoras","Refrigeradores","Diagnóstico a domicilio","Reparación en taller","Entrega en tu casa"];mw.forEach(function(w){mqt+="<span>"+w+"</span>•"});$("mq").innerHTML=mqt+mqt;
+var hero=$("hero");hero.addEventListener("pointermove",function(e){var r=hero.getBoundingClientRect();hero.style.setProperty("--mx",(e.clientX-r.left)+"px");hero.style.setProperty("--my",(e.clientY-r.top)+"px")});
+$$(".mag").forEach(function(el){el.addEventListener("pointermove",function(e){var r=el.getBoundingClientRect();el.style.transform="translate("+(e.clientX-r.left-r.width/2)*.22+"px,"+(e.clientY-r.top-r.height/2)*.3+"px)"});el.addEventListener("pointerleave",function(){el.style.transform=""})});
+var st=$("stage");st.addEventListener("pointermove",function(e){var r=st.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;st.style.setProperty("--ry",x*14+"deg");st.style.setProperty("--rx",-y*10+"deg")});st.addEventListener("pointerleave",function(){st.style.setProperty("--ry","0deg");st.style.setProperty("--rx","0deg")});
+var pin=$("servicios"),cur=-1;
+function show(i){if(i===cur)return;cur=i;[0,1].forEach(function(j){$("p"+j).classList.toggle("on",j===i);$("t"+j).setAttribute("aria-selected",j===i)});$("aw").classList.toggle("off",i!==0);$("af").classList.toggle("off",i!==1)}
+var tl=$("tl"),lis=$$("#tl li");
+function tick(){var y=scrollY,d=document.documentElement;$("bar").style.width=y/(d.scrollHeight-innerHeight)*100+"%";
+var r=pin.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(pin.offsetHeight-innerHeight)));$("pg").style.width=p*100+"%";show(p<.5?0:1);
+var tr=tl.getBoundingClientRect(),line=innerHeight*.6;$("fill").style.height=Math.max(0,Math.min(tr.height-16,line-tr.top))+"px";lis.forEach(function(li){li.classList.toggle("on",li.getBoundingClientRect().top<line)})}
+addEventListener("scroll",tick,{passive:true});addEventListener("resize",tick);
+[0,1].forEach(function(i){$("t"+i).onclick=function(){var r=pin.getBoundingClientRect();scrollTo({top:r.top+scrollY+(pin.offsetHeight-innerHeight)*(i?.78:.1)})}});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add("in");var c=e.target.querySelector(".cu");if(c){var t=+c.dataset.to,n=0,iv=setInterval(function(){n++;c.textContent=n;if(n>=t)clearInterval(iv)},140)}io.unobserve(e.target)})},{threshold:.2});
+$$(".rv").forEach(function(el,i){el.style.transitionDelay=(i%3)*100+"ms";io.observe(el)});
+function fmt(h){return(h>12?h-12:h)+" "+(h>=12?"p.m.":"a.m.")}
+var o={};new Intl.DateTimeFormat("en-US",{timeZone:"America/Mexico_City",year:"numeric",month:"numeric",day:"numeric",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()).forEach(function(x){o[x.type]=x.value});
+var wd0=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday),nowH=(+o.hour%24)+(+o.minute)/60,H=[null,[9,18],[9,18],[9,18],[9,18],[9,18],[9,14]],hr=H[wd0],open=hr&&nowH>=hr[0]&&nowH<hr[1];
+$("dot").className="dot"+(open?" on":"");$("status").textContent=open?"Abierto ahora · cierra a las "+fmt(hr[1]):"Cerrado ahora";
+var DN=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+$("hrs").innerHTML=[1,2,3,4,5,6,0].map(function(k){var x=H[k];return"<tr"+(k===wd0?' class="today"':"")+"><td>"+DN[k]+"</td><td>"+(x?fmt(x[0])+" – "+fmt(x[1]):"Cerrado")+"</td></tr>"}).join("");
+$("yr").textContent=new Date().getFullYear();
+var SV=[["Mantenimiento completo de lavadora","Revisión y mantenimiento completo de tu lavadora"],["Diagnóstico a domicilio · Lavadora","Revisamos tu lavadora en tu domicilio"],["Diagnóstico a domicilio · Refrigerador","Revisamos tu refrigerador en tu domicilio"]],S={s:0,d:null,t:null};
+var base=new Date(Date.UTC(+o.year,+o.month-1,+o.day)),days=[],i;
+for(i=0;i<21&&days.length<12;i++){var dt=new Date(Date.UTC(base.getUTCFullYear(),base.getUTCMonth(),base.getUTCDate()+i));if(dt.getUTCDay()!==0)days.push({dt:dt,i:i})}
+var f1=new Intl.DateTimeFormat("es-MX",{weekday:"short",timeZone:"UTC"}),f2=new Intl.DateTimeFormat("es-MX",{weekday:"long",day:"numeric",month:"long",timeZone:"UTC"});
+function mk(){var s=$("sv");SV.forEach(function(v,k){var b=E("button","opt","<b>"+v[0]+"</b><small>"+v[1]+"</small>");b.type="button";b.setAttribute("aria-pressed",k===S.s);b.onclick=function(){S.s=k;$$("#sv .opt").forEach(function(x,j){x.setAttribute("aria-pressed",j===k)});up()};s.appendChild(b)});
+var dd=$("days");days.forEach(function(d,k){var b=E("button","opt",f1.format(d.dt).replace(".","")+"<b>"+d.dt.getUTCDate()+"</b>");b.type="button";b.setAttribute("aria-pressed","false");b.onclick=function(){S.d=k;S.t=null;$$("#days .opt").forEach(function(x,j){x.setAttribute("aria-pressed",j===k)});slots(d);up()};dd.appendChild(b)})}
+function slots(d){var w=d.dt.getUTCDay(),end=w===6?13:17,c=$("slots"),n=0;c.innerHTML="";for(var h=9;h<=end;h++){if(d.i===0&&h<=nowH+1)continue;(function(h){var b=E("button","opt",h>12?h-12+":00 p.m.":h+":00 "+(h>=12?"p.m.":"a.m."));b.type="button";b.style.setProperty("--i",n++);b.setAttribute("aria-pressed","false");b.onclick=function(){S.t=h;$$("#slots .opt").forEach(function(x){x.setAttribute("aria-pressed",x===b)});up()};c.appendChild(b)})(h)}
+if(!n)c.innerHTML='<span style="color:#8a8a8a">Ya no hay horarios hoy. Elige otro día.</span>'}
+function up(){var nm=$("nm").value.trim(),zn=$("zn").value.trim(),ok=S.d!==null&&S.t!==null&&nm&&zn,a=$("send");
+var ds=S.d!==null?f2.format(days[S.d].dt):"",ts=S.t!==null?(S.t>12?S.t-12:S.t)+":00 "+(S.t>=12?"p.m.":"a.m."):"";
+$("sum").textContent=ok?SV[S.s][0]+" · "+ds+", "+ts+".":"Completa los pasos para solicitar tu cita.";
+a.setAttribute("aria-disabled",!ok);
+if(ok)a.href="https://wa.me/527292749447?text="+encodeURIComponent("Hola, quiero agendar una cita en Servicio Técnico Kadian.\nServicio: "+SV[S.s][0]+"\nFecha: "+ds+"\nHora: "+ts+"\nNombre: "+nm+"\nZona: "+zn)}
+mk();$("nm").oninput=up;$("zn").oninput=up;show(0);tick();
+</script>
+</body>
+</html>
